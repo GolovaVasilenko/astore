@@ -1,0 +1,20 @@
+{
+    "name": "alexey/astore.loc",
+    "description": "astore fore free",
+    "type": "project",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "GolovaVasilenko",
+            "email": "vasilenko75@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "astore\\": "vendor/astore",
+            "app\\": "app"
+        }
+    }
+}
