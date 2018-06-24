@@ -13,7 +13,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "astore\\": "vendor/astore",
+            "astore\\": "vendor/astore/core",
             "app\\": "app"
         }
     }
