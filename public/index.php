@@ -11,7 +11,4 @@ require_once LIBS . "/functions.php";
 $app = new astore\App();
 
 
-debug(\astore\Router::getRoutes());
-
-
 
