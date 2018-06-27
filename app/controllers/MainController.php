@@ -2,8 +2,10 @@
 
 namespace app\controllers;
 
-
-class MainController
+class MainController extends AppController
 {
-
+    public function index()
+    {
+        echo __METHOD__;
+    }
 }
