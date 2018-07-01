@@ -9,6 +9,3 @@ require_once CONF . "/routes.php";
 require_once LIBS . "/functions.php";
 
 $app = new astore\App();
-
-
-

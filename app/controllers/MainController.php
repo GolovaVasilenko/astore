@@ -4,8 +4,9 @@ namespace app\controllers;
 
 class MainController extends AppController
 {
-    public function index()
+    public function indexAction()
     {
-        echo __METHOD__;
+        $this->setMeta(\astore\App::$app->getProperty("site_name"),"escription", "home keywords...");
+        $this->set(['name' => 'Alexey']);
     }
 }

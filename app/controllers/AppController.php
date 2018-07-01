@@ -6,5 +6,5 @@ use astore\base\AbstractController;
 
 class AppController extends AbstractController
 {
-
+    
 }

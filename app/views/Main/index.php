@@ -1,0 +1,1 @@
+<?php echo "index view === name " . $name;?>
