@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "gabordemooij/redbean": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "astore\\": "vendor/astore/core",

@@ -9,5 +9,14 @@
 <body>
 	<h1>Default</h1>
 	<?=$content?>
+<?php
+    if(DEBUG){
+        $logs = \R::getDatabaseAdapter()
+            ->getDatabase()
+            ->getLogger();
+
+        debug( $logs->grep( 'SELECT' ) );
+    }
+?>
 </body>
 </html>
