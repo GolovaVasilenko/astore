@@ -65,8 +65,8 @@
                         <img src="/assets/img/icon/facilitie1.png" alt="facilitie">
                     </div>
                     <div class="facilitie-content">
-                        <h3>free shipphing</h3>
-                        <p>on all orders over $50.00</p>
+                        <h3>Бесплатная доставка</h3>
+                        <p>на сумму заказ более 1000 грн</p>
                     </div>
                 </div>
             </div>
@@ -76,8 +76,8 @@
                         <img src="/assets/img/icon/facilitie2.png" alt="facilitie">
                     </div>
                     <div class="facilitie-content">
-                        <h3>Money back guarante</h3>
-                        <p>100% Money-back guarantee</p>
+                        <h3>Гагантия качества</h3>
+                        <p>американского производителя</p>
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
                         <img src="/assets/img/icon/facilitie3.png" alt="facilitie">
                     </div>
                     <div class="facilitie-content">
-                        <h3>24 hours support</h3>
-                        <p>24 / 7 from Monday to Friday</p>
+                        <h3>Свжитесь с нами</h3>
+                        <p>Мы ответим на ваши вопросы</p>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
     </div>
 </div>
 <!-- Facilities Area End -->
-<!-- Feature Area Start -->
+<!-- Feature Area Start HIT -->
 <div class="feature-area pb-75">
     <div class="container">
         <div class="row">
@@ -922,7 +922,7 @@
 </div>
 <!-- Feature Area End -->
 <!-- Offer Area Start -->
-<div class="offer-area pt-100">
+<!--<div class="offer-area pt-100">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -966,7 +966,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Offer Area End -->
 <!-- Best Area Start -->
 <div class="best-seller-area pt-100  pb-75">
@@ -1261,7 +1261,7 @@
 </div>
 <!-- Best Area End -->
 <!-- Testimonial Area Start -->
-<div class="testimonial-area pt-100 pb-100">
+<!--<div class="testimonial-area pt-100 pb-100">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -1277,7 +1277,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Testimonial Area End -->
 <!-- Blog Area Start -->
 <div class="blog-area pt-100 pb-100">
