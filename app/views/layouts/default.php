@@ -41,12 +41,12 @@
                             <div class="col-md-6">
                                <div class="account-usd text-left">
                                     <ul>
-                                        <li><a href="register.html">My Account</a>
+                                        <li><a href="register.html">Мой кабинет</a>
                                             <ul class="submenu-mainmenu">
-                                                <li><a href="product-details.html">compare products</a></li>
-                                                <li><a href="register.html">My Account</a></li>
-                                                <li><a href="wishlist.html">My Wish List</a></li>
-                                                <li><a href="register.html">Sign In</a></li>
+                                                <li><a href="product-details.html">Сравнить товары</a></li>
+                                                <li><a href="register.html">Кабинет пользователя</a></li>
+                                                <li><a href="wishlist.html">Список желаний</a></li>
+                                                <li><a href="register.html">Выход</a></li>
                                             </ul>
                                         </li>
                                         <li class="currency"><a href="#">English1</a>
