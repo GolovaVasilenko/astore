@@ -41,21 +41,32 @@
                             <div class="col-md-6">
                                <div class="account-usd text-left">
                                     <ul>
+
                                         <li><a href="register.html">Мой кабинет</a>
-                                            <ul class="submenu-mainmenu">
-                                                <li><a href="product-details.html">Сравнить товары</a></li>
-                                                <li><a href="register.html">Кабинет пользователя</a></li>
-                                                <li><a href="wishlist.html">Список желаний</a></li>
-                                                <li><a href="register.html">Выход</a></li>
-                                            </ul>
+                                            <?php if(\astore\Session::get('user')):?>
+                                                <ul class="submenu-mainmenu">
+                                                    <li><a href="product-details.html">Сравнить товары</a></li>
+                                                    <li><a href="register.html">Кабинет пользователя</a></li>
+                                                    <li><a href="wishlist.html">Список желаний</a></li>
+                                                    <li><a href="/user/logout">Выход</a></li>
+                                                </ul>
+                                            <?php else:?>
+                                                <ul class="submenu-mainmenu">
+                                                    <li><a href="/user/login">Вход</a></li><br>
+                                                    <li><a href="/user/register">Регистрация</a></li>
+                                                </ul>
+                                            <?php endif;?>
                                         </li>
+
                                         <li class="currency"><a href="#">English1</a>
                                             <ul class="submenu-mainmenu">
-                                                <li><a href="#">English2</a></li>
+                                                <li><a href="#">Russian</a></li>
+                                                <li><a href="#">English</a></li>
                                             </ul>
                                         </li>
                                         <li class="language"><a href="#">USD</a>
                                             <ul class="submenu-mainmenu">
+                                                <li><a href="#">Грн</a></li>
                                                 <li><a href="#">Euro</a></li>
                                             </ul>
                                         </li>
