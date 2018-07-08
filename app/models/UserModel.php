@@ -3,6 +3,8 @@
 namespace app\models;
 
 
+use astore\Session;
+
 class UserModel extends AppModel
 {
     const TABLE = 'users';
@@ -38,5 +40,34 @@ class UserModel extends AppModel
             return false;
         }
         return true;
+    }
+
+    public static function getAuthUser($data)
+    {
+        $user = \R::findOne(static::TABLE, 'WHERE email = ?', [$data['email']]);
+
+        if($user){
+            if(password_verify($data['password'], $user->password)){
+                Session::set('user', serialize($user));
+                return $user;
+            }
+        }
+        return false;
+    }
+
+    public static function isAuth()
+    {
+        return Session::get('user') ? true : false;
+    }
+
+    public static function isAdmin()
+    {
+        if(self::isAuth()){
+            $user = unserialize(Session::get('user'));
+            if($user->role === 'admin'){
+                return true;
+            }
+        }
+        return false;
     }
 }

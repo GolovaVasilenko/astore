@@ -23,7 +23,8 @@
             <div class="col-lg-6 col-md-12 mb-30">
                 <div class="login-left subtitle">
                     <h3>Зарегистрированный пользователь</h3>
-                    <p>Если у вас есть учетная запись, войдите используя ваши регистрационные данные. <span>Поля email и password рбязательны к заполнению</span></p>
+                    <p>Если у вас есть учетная запись, войдите используя ваши регистрационные данные.</p>
+                    <form action="/user/login" method="post">
                     <div class="email">
                         <label for="email" class="label"><span>email</span></label>
                         <input id="email" name="email" type="email" required>
@@ -33,9 +34,9 @@
                         <input id="password" name="password" type="password" required>
                     </div>
                     <div class="sign-in">
-                        <a href="/user/register" class="sign-in">sign in</a>
-                        <p class="forget">forget your password?</p>
+                        <button type="submit" class="sign-in">Войти</button>
                     </div>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 mb-30">

@@ -1,3 +1,4 @@
+
 <div class="breadcrumb-area mb-100">
     <div class="container">
         <div class="row">
@@ -12,6 +13,7 @@
         </div>
     </div>
 </div>
+
 <div class="my-account-area pb-100">
     <div class="container">
         <div class="row">
@@ -21,11 +23,11 @@
                         <h3>Регистрация</h3>
                         <p>
                             <label for="reg-name" class="important">Имя</label>
-                            <input type="text" name="name" value="<?=$old['name'] ?: '';?>" id="reg-name" required>
+                            <input type="text" name="name" value="<?=$old_data['name'] ? : '';?>" id="reg-name" required>
                         </p>
                         <p>
                             <label for="reg-email" class="important">Email</label>
-                            <input type="email" name="email" value="<?=$old['email'] ?: '';?>" id="reg-email" required>
+                            <input type="email" name="email" value="<?=$old_data['email'] ? : '';?>" id="reg-email" required>
                         </p>
                         <p>
                             <label for="reg-pass" class="important">Password</label>

@@ -267,25 +267,14 @@
             <div class="container arrea-errors">
                 <div class="row">
                     <div class="col-md-12">
-                        <?php
-                            if($old = \astore\Session::get('old')){
-                                \astore\Session::remove('old');
-                            }
-                        ?>
-                        <?php if($errors = \astore\Session::get('errors')):?>
+                        <?php if(isset($errors)):?>
                             <div class="alert alert-danger">
-                                <?php
-                                    echo $errors;
-                                    \astore\Session::remove('errors');
-                                ?>
+                                <?=$errors; ?>
                             </div>
                         <?php endif;?>
-                        <?php if($success = \astore\Session::get('success')):?>
+                        <?php if(isset($success)):?>
                             <div class="alert alert-success">
-                                <?php
-                                    echo $success;
-                                    \astore\Session::remove('success');
-                                ?>
+                                <?=$success; ?>
                             </div>
                         <?php endif;?>
                     </div>
