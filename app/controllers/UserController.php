@@ -42,10 +42,10 @@ class UserController extends AppController
     {
         if(!empty($_POST)){
             $data = $_POST;
-            $user = UserModel::getAuthUser($data);
+            $user = new UserModel();
 
-            if($user){
-                if($user->role === 'admin'){
+            if($user->getAuthUser($data)){
+                if(UserModel::isAdmin()){
                     $this->redirect(ADMIN);
                 }
                 else {
@@ -70,4 +70,5 @@ class UserController extends AppController
         Session::remove('user');
         $this->redirect(PATH);
     }
+
 }

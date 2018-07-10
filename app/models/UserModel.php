@@ -2,7 +2,6 @@
 
 namespace app\models;
 
-
 use astore\Session;
 
 class UserModel extends AppModel
@@ -42,14 +41,14 @@ class UserModel extends AppModel
         return true;
     }
 
-    public static function getAuthUser($data)
+    public function getAuthUser($data)
     {
         $user = \R::findOne(static::TABLE, 'WHERE email = ?', [$data['email']]);
 
         if($user){
             if(password_verify($data['password'], $user->password)){
                 Session::set('user', serialize($user));
-                return $user;
+                return true;
             }
         }
         return false;

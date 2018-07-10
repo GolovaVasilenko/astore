@@ -4,6 +4,7 @@
 namespace app\controllers\admin;
 
 
+use app\models\AppModel;
 use app\models\UserModel;
 use astore\base\AbstractController;
 
@@ -15,8 +16,9 @@ class AppController extends AbstractController
     {
         parent::__construct($route);
 
-        if(!UserModel::isAuth()){
-            $this->redirect(ADMIN . '/user/login-admin');
+        if(!UserModel::isAdmin() && $route['action'] != 'login-admin'){
+            $this->redirect(ADMIN . 'user/login-admin');
         }
+        new AppModel();
     }
 }
