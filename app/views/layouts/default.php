@@ -156,8 +156,11 @@
                                                 <li><a href="index-6.html">home six</a></li>
                                             </ul>
                                         </li>
-                                        <li class="megamenu"><a href="shop.html">Furniture <i class="fa fa-angle-down"></i></a>
-                                            <ul>
+                                        <li class="megamenu"><a href="#">Каталог <i class="fa fa-angle-down"></i></a>
+                                            <?php new \app\widgets\catalog\CatalogList([
+                                                    'tpl' => APP . '/views/widgets/catalog/menu_catalog.php',
+                                            ]);?>
+                                            <!--ul>
                                                 <li>
                                                     <ul>
                                                         <li>Chairs</li>
@@ -190,7 +193,7 @@
                                                         <li><a href="#">Skirts</a></li>
                                                     </ul>
                                                 </li>
-                                            </ul>
+                                            </ul-->
                                         </li>
                                         <li><a href="shop.html">shop</a>
                                             <ul>
