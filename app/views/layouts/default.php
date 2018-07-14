@@ -156,7 +156,7 @@
                                                 <li><a href="index-6.html">home six</a></li>
                                             </ul>
                                         </li>
-                                        <li class="megamenu"><a href="#">Каталог <i class="fa fa-angle-down"></i></a>
+                                        <li class="megamenu-catalog"><a href="#">Каталог <i class="fa fa-angle-down"></i></a>
                                             <?php new \app\widgets\catalog\CatalogList([
                                                     'tpl' => APP . '/views/widgets/catalog/menu_catalog.php',
                                             ]);?>

@@ -15,7 +15,6 @@ class AppController extends AbstractController
         parent::__construct($route);
 
         new AppModel();
-
         App::$app->setProperty('cats', self::cacheCategory());
     }
 
@@ -24,7 +23,7 @@ class AppController extends AbstractController
         $cats = Cache::get('cats');
         if(!$cats) {
             $cats = CategoryModel::getAllCategories();
-            Cache::set('cats', $cats);
+            Cache::set('cats', $cats, 1);
         }
 
         return $cats;
