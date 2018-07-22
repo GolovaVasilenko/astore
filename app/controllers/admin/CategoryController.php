@@ -4,6 +4,7 @@
 namespace app\controllers\admin;
 
 use app\models\CategoryModel;
+use astore\App;
 use astore\Session;
 
 
@@ -53,5 +54,31 @@ class CategoryController extends AppController
             $this->redirect(ADMIN . 'category/add');
         }
         $this->setMeta("Добавление новой Категории");
+    }
+
+    public function editAction()
+    {
+        if(!empty($_POST)){
+            $id = $this->getRequestID(false);
+            $model = new CategoryModel();
+            $data = $_POST;
+            $model->load($data);
+
+            if(!$model->validate($data)){
+                $model->getErrors();
+                $this->redirect(ADMIN . 'category/edit?id=' . $id);
+            }
+
+            $model->update($model::TABLE, $id);
+            Session::set('success', 'Категория успешно сохранена');
+            $this->redirect(ADMIN . 'category/edit?id=' . $id);
+        }
+        
+        $id = $this->getRequestID();
+        $category = CategoryModel::findById($id);
+        App::$app->setProperty('parent_id', $category->parent_id);
+
+        $this->set(['category' => $category]);
+        $this->setMeta('Редактирование категории' . $category->title);
     }
 }

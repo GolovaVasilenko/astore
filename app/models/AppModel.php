@@ -22,7 +22,7 @@ class AppModel extends AbstractModel
      */
     public static function findById($id)
     {
-        return \R::find(static::TABLE, 'WHERE id = ?', [ $id ]);
+        return \R::findOne(static::TABLE, 'WHERE id = ?', [ $id ]);
     }
 
     /**
