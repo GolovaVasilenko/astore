@@ -29,4 +29,20 @@ class CategoryController extends AppController
         Session::set('success', 'Категория успешно удалена!');
         $this->redirect(ADMIN . 'category');
     }
+
+    public function addAction()
+    {
+        if(!empty($_POST)){
+            $model = new CategoryModel();
+            $data = $_POST;
+            $model->load($data);
+
+            if(!$model->validate($data)){
+                $model->getErrors();
+                Session::set('old', $data);
+                $this->redirect(ADMIN . 'category/add');
+            }
+        }
+        $this->setMeta("Добавление новой Категории");
+    }
 }

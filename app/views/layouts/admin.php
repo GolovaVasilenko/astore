@@ -410,6 +410,22 @@
     </aside>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+        <div class="container arrea-errors">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php if(isset($errors)):?>
+                        <div class="alert alert-danger alert-dismissible">
+                            <?=$errors; ?>
+                        </div>
+                    <?php endif;?>
+                    <?php if(isset($success)):?>
+                        <div class="alert alert-success alert-dismissible">
+                            <?=$success; ?>
+                        </div>
+                    <?php endif;?>
+                </div>
+            </div>
+        </div>
         <?=$content;?>
     </div>
     <!-- /.content-wrapper -->
@@ -630,6 +646,7 @@
 <!-- Morris.js charts -->
 <script src="/assets/admin/bower_components/raphael/raphael.min.js"></script>
 <!--script src="/assets/admin/bower_components/morris.js/morris.min.js"></script-->
+<script src="/assets/js/jquery.slugify.js"></script>
 <!-- Sparkline -->
 <script src="/assets/admin/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
@@ -651,6 +668,7 @@
 <!-- AdminLTE App -->
 <script src="/assets/admin/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/assets/admin/custom.js"></script>
 <!--script src="/assets/admin/dist/js/pages/dashboard.js"></script-->
 <!-- AdminLTE for demo purposes -->
 

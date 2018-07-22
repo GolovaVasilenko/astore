@@ -160,40 +160,6 @@
                                             <?php new \app\widgets\catalog\CatalogList([
                                                     'tpl' => APP . '/views/widgets/catalog/menu_catalog.php',
                                             ]);?>
-                                            <!--ul>
-                                                <li>
-                                                    <ul>
-                                                        <li>Chairs</li>
-                                                        <li><a href="#">Armchairs</a></li>
-                                                        <li><a href="#">Mattress</a></li>
-                                                        <li><a href="#">Bunk Bed</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li>Ottomans</li>
-                                                        <li><a href="#">Bedspread</a></li>
-                                                        <li><a href="#">Chest</a></li>
-                                                        <li><a href="#">Wardrobe</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li>Sink</li>
-                                                        <li><a href="#">Shorts</a></li>
-                                                        <li><a href="#">Dresses</a></li>
-                                                        <li><a href="#">Trousers</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li>Table</li>
-                                                        <li><a href="#">Bedspread</a></li>
-                                                        <li><a href="#">Shorts</a></li>
-                                                        <li><a href="#">Skirts</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul-->
                                         </li>
                                         <li><a href="shop.html">shop</a>
                                             <ul>

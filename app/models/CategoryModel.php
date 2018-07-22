@@ -7,6 +7,22 @@ use astore\Session;
 
 class CategoryModel extends AppModel
 {
+    public $attributes = [
+        'title' => '',
+        'parent_id' => null,
+        'slug' => '',
+        'h1' => '',
+        'description' => '',
+        'meta_title' => '',
+        'meta_desc' => '',
+        'meta_key' => '',
+    ];
+
+    public $rules = [
+        'required' => [
+            ['title']
+         ]
+    ];
 
 	const TABLE = 'categories';
 
