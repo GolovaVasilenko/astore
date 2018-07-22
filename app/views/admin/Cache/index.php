@@ -37,7 +37,7 @@
                                     <td>Кеш витжета меню на сайте</td>
                                     <td>1ч</td>
                                     <td>
-                                        <a class="delete" href="<?=ADMIN;?>/cache/delete?key=category">
+                                        <a class="delete" href="<?=ADMIN;?>cache/delete?key=category">
                                             <i class="fa fa-fw fa-close text-danger"></i>
                                         </a>
                                     </td>
@@ -47,7 +47,7 @@
                                     <td>Кеш витжета фильтров и групп фильтров на сайте</td>
                                     <td>1ч</td>
                                     <td>
-                                        <a class="delete" href="<?=ADMIN;?>/cache/delete?key=filters">
+                                        <a class="delete" href="<?=ADMIN;?>cache/delete?key=filters">
                                             <i class="fa fa-fw fa-close text-danger"></i>
                                         </a>
                                     </td>
