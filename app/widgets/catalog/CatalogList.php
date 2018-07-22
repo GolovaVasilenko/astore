@@ -23,7 +23,7 @@ class CatalogList
 
     protected $table = 'categories';
 
-    protected $cacheTime = 0;
+    protected $cacheTime = 3600;
 
     protected $cacheKey = 'catalog_list';
 
@@ -86,9 +86,10 @@ class CatalogList
             if(!$node['parent_id']){
                 $tree[$id] = &$node;
             }else{
-                $tree[$node['parent_id']]['children'][$id] = $node;
+                $data[$node['parent_id']]['children'][$id] = &$node;
             }
         }
+
         return $tree;
     }
 

@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="/assets/css/slick.css">
         <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet" href="/assets/css/responsive.css">
-        <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+       
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -482,6 +482,7 @@
         <!--End of Newsletter Form-->
         
         <script src="/assets/js/vendor/jquery-3.2.1.min.js"></script>
+         <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="/assets/js/popper.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
         <script src="/assets/js/jquery.meanmenu.js"></script>

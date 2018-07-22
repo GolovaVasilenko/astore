@@ -23,7 +23,7 @@ class AppController extends AbstractController
         $cats = Cache::get('cats');
         if(!$cats) {
             $cats = CategoryModel::getAllCategories();
-            Cache::set('cats', $cats, 1);
+            Cache::set('cats', $cats);
         }
 
         return $cats;
