@@ -20,11 +20,11 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <form role="form" method="post" action="<?=ADMIN;?>/category/add">
+                    <form role="form" method="post" action="<?=ADMIN;?>category/add">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="title-cat">Наименование Категории</label>
-                                <input type="text" name="title" class="form-control" id="title-cat" placeholder="" required>
+                                <input type="text" name="title" class="form-control" id="title" placeholder="" required>
                             </div>
                             <div class="form-group">
                                 <label for="parent-cat">Родительская категория</label>
@@ -35,12 +35,12 @@
                                     'cacheTime' => 0,
                                     'class'     => 'form-control',
                                     'attrs'     => ['name' => 'parent_id', 'id' => 'parent-cat'],
-                                    'prepend'   => '<option value="">Нет родителя</option>',
+                                    'prepend'   => '<option value="0">Нет родителя</option>',
                                 ])?>
                             </div>
                             <div class="form-group">
                                 <label for="cat-slug">URL</label>
-                                <input type="text" name="slug" class="form-control" id="cat-slug" placeholder="">
+                                <input type="text" name="slug" class="form-control slug" id="cat-slug" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label for="cat-h1">H1</label>

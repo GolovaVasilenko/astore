@@ -42,6 +42,15 @@ class CategoryController extends AppController
                 Session::set('old', $data);
                 $this->redirect(ADMIN . 'category/add');
             }
+
+            if(CategoryModel::checkSlugUniq($model->attributes['slug'])){
+                Session::set('errors', 'URL должен быть уникальным');
+                $this->redirect(ADMIN . 'category/add');
+            }
+
+            $model->save($model::TABLE);
+            Session::set('success', 'Категория успешно создана');
+            $this->redirect(ADMIN . 'category/add');
         }
         $this->setMeta("Добавление новой Категории");
     }

@@ -9,7 +9,7 @@ class CategoryModel extends AppModel
 {
     public $attributes = [
         'title' => '',
-        'parent_id' => null,
+        'parent_id' => 0,
         'slug' => '',
         'h1' => '',
         'description' => '',

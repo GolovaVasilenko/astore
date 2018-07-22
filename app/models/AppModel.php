@@ -44,4 +44,9 @@ class AppModel extends AbstractModel
     {
         return \R::find(static::TABLE, $field . ' LIKE ?', [ $value ]);
     }
+
+    public static function checkSlugUniq($slug)
+    {
+        return self::findByColumn('slug', $slug);
+    }
 }
