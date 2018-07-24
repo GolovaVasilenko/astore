@@ -19,4 +19,9 @@ class ProductModel extends AppModel
             $this->relations[$key] = \R::find($key, 'WHERE product_id = ?', $this->attributes['id']);
         return $this->relations[$key];
     }
+
+    public static function countProduct()
+    {
+        return \R::count(self::TABLE);
+    }
 }
