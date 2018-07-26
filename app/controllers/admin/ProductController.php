@@ -19,6 +19,8 @@ class ProductController extends AppController
 
         $products = ProductModel::getAllProducts($start, $perpage);
 
+        debug($products);
+
         $this->set(['products' => $products, 'count' => $count]);
         $this->setMeta('Список продуктов магазина');
     }
