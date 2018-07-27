@@ -5,6 +5,10 @@ namespace app\models;
 
 class ProductModel extends AppModel
 {
+    protected $categories = [];
+
+    protected $brand;
+
     const TABLE = "products";
     
 
@@ -20,6 +24,11 @@ class ProductModel extends AppModel
                 JOIN categories_products AS cp ON cp.products_id = products.id 
                 JOIN categories ON categories.id = cp.categories_id   
                 LIMIT {$start}, {$perpage}");
+    }
+
+    public function getCategories()
+    {
+
     }
 
     public function __get($key)
